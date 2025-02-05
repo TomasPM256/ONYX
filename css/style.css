@@ -10,38 +10,88 @@ body {
 
 /* Header */
 
-header {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-header img {
-    width: 100px;
-    height: 100px;
-}
-
 h1 {
     font-size: 80px;
     font-weight: 800;
 }
 
-header nav ul {
-    list-style: none;
+.navbar-logo {
+    height: 40px;
+    width: auto;
+    margin-left: 20px;
+    display: block;
+}
+
+.navbar-brand {
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-link {
     font-size: 22px;
-    display: flex;
+    padding: 15px 25px;
 }
 
-header nav ul li {
-    margin: 20px;
+.navbar-toggler {
+    transform: scale(1.4);
 }
 
-header nav ul li a {
-    text-decoration: none;
-    color: black;
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 30px;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+    }
 }
+
+@media (max-width: 576px) {
+    .navbar-logo {
+        height: 30px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+}
+
+.navbar-logo {
+    height: 40px;
+    width: auto;
+    margin-left: 20px;
+    display: block;
+}
+
+.navbar-collapse.show .navbar-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 40px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-logo {
+        height: 30px;
+    }
+}
+
 
 /* Main */
 
@@ -523,4 +573,153 @@ footer img {
     .confiables p {
         font-size: 28px;
     }
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+section.novedades h2,
+section.buzos h2,
+section.remeras h2,
+section.pantalones h2 {
+    margin: 20px 0;
+}
+
+.buzos-div, .remeras-div, .pantalones-div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.buzos-div div, .remeras-div div, .pantalones-div div {
+    width: 22%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.buzos-div img, .remeras-div img, .pantalones-div img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.buzos-div a, .remeras-div a, .pantalones-div a {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+    .buzos-div div, .remeras-div div, .pantalones-div div {
+        width: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    .buzos-div, .remeras-div, .pantalones-div {
+        justify-content: center;
+    }
+
+    .buzos-div div, .remeras-div div, .pantalones-div div {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .buzos-div div, .remeras-div div, .pantalones-div div {
+        width: 100%;
+    }
+
+    .buzos-div, .remeras-div, .pantalones-div {
+        justify-content: center;
+    }
+}
+
+.buzos-div div, .remeras-div div, .pantalones-div div {
+    width: 22%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.buzos-div img, .remeras-div img, .pantalones-div img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.buzos-div a, .remeras-div a, .pantalones-div a {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 1200px) {
+    .buzos-div div, .remeras-div div, .pantalones-div div {
+        width: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    .buzos-div, .remeras-div, .pantalones-div {
+        justify-content: center;
+    }
+
+    .buzos-div div, .remeras-div div, .pantalones-div div {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .buzos-div div, .remeras-div div, .pantalones-div div {
+        width: 100%;
+    }
+
+    .buzos-div, .remeras-div, .pantalones-div {
+        justify-content: center;
+    }
+}
+
+.buzos-div div img, .remeras-div div img, .pantalones-div div img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.buzos-div div, .remeras-div div, .pantalones-div div {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buzos-div div img, .remeras-div div img, .pantalones-div div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

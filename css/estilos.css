@@ -1,0 +1,345 @@
+h1 {
+  font-size: 80px;
+  font-weight: 800;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  margin-left: 20px;
+  display: block;
+}
+
+.navbar-brand {
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+  font-size: 22px;
+  padding: 15px 25px;
+}
+
+.navbar-toggler {
+  transform: scale(1.4);
+}
+
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 30px;
+  }
+  .navbar-brand {
+    font-size: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-logo {
+    height: 30px;
+  }
+  .navbar-brand {
+    font-size: 20px;
+  }
+}
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  margin-left: 20px;
+  display: block;
+}
+
+.navbar-collapse.show .navbar-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 40px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-logo {
+    height: 30px;
+  }
+}
+/* Main */
+.hero {
+  color: black;
+  height: 600px;
+  background-image: url(../img/pura\ ropa\ blanca\ en\ 1920x1080.png);
+  background-size: cover;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.hero div h2 {
+  margin-left: 20px;
+  font-size: 40px;
+}
+
+.hero div p {
+  font-size: 35px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.hero a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  margin-left: 20px;
+  font-size: 30px;
+  padding: 5px 10px 5px 10px;
+}
+
+.oferta {
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.oferta div {
+  margin: 50px;
+  font-size: 45px;
+}
+
+.oferta img {
+  height: 600px;
+}
+
+.productos {
+  background-color: white;
+}
+
+.productos h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.productos-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.productos .productos-div div {
+  border: 1px solid grey;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  margin: 20px;
+}
+
+.productos div a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+
+.productos div h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.productos div img {
+  width: 100%;
+  height: 300px;
+}
+
+/* Footer */
+footer {
+  background-color: white;
+  margin-top: 40px;
+}
+
+footer h2 {
+  font-size: 50px;
+}
+
+footer img {
+  width: 80px;
+  height: 80px;
+  margin-top: 50px;
+}
+
+.body-contacto {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dudas {
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+.dudas h2 {
+  font-size: 40px;
+}
+
+.h2-preguntas {
+  margin-left: 30px;
+}
+
+.h2-preguntas h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.h2-preguntas .preguntas div {
+  border: 1px solid grey;
+  width: 300px;
+  height: 280px;
+  text-align: center;
+  margin: 20px;
+}
+
+.footer-contacto {
+  font-size: 50px;
+}
+
+.footer-contacto img {
+  width: 80px;
+  height: 80px;
+  margin-top: 50px;
+}
+
+.transferencia {
+  margin-top: 50px;
+}
+.transferencia h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.transferencia ol li {
+  font-size: 30px;
+}
+
+.novedades h2 {
+  font-size: 70px;
+  margin-bottom: 70px;
+}
+
+.imagenes-nov .carousel-control-prev-icon,
+.imagenes-nov .carousel-control-next-icon {
+  background-color: black;
+  border-radius: 50%;
+}
+.imagenes-nov .carousel-control-prev-icon:hover,
+.imagenes-nov .carousel-control-next-icon:hover {
+  background-color: black;
+}
+.imagenes-nov .carousel-inner img {
+  max-width: 50%;
+  max-height: 500px;
+  object-fit: cover;
+  margin: auto;
+}
+
+.buzos {
+  margin-top: 80px;
+}
+.buzos h2 {
+  margin-bottom: 30px;
+}
+.buzos .buzos-div {
+  display: flex;
+  justify-content: space-around;
+}
+.buzos .buzos-div img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.buzos .buzos-div a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+.buzos .buzos-div div {
+  border: 1px solid grey;
+  width: 300px;
+  height: 360px;
+  text-align: center;
+  margin: 20px;
+}
+
+.remeras {
+  margin-top: 80px;
+}
+.remeras h2 {
+  margin-bottom: 30px;
+}
+.remeras .remeras-div {
+  display: flex;
+  justify-content: space-around;
+}
+.remeras .remeras-div img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.remeras .remeras-div a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+.remeras .remeras-div div {
+  border: 1px solid grey;
+  width: 300px;
+  height: 360px;
+  text-align: center;
+  margin: 20px;
+}
+
+.pantalones {
+  margin-top: 80px;
+}
+.pantalones h2 {
+  margin-bottom: 30px;
+}
+.pantalones .pantalones-div {
+  display: flex;
+  justify-content: space-around;
+}
+.pantalones .pantalones-div img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.pantalones .pantalones-div a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+.pantalones .pantalones-div div {
+  border: 1px solid grey;
+  width: 300px;
+  height: 360px;
+  text-align: center;
+  margin: 20px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
