@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto - ONYX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
-<body class="body-contacto">
+<body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
             <div class="container-fluid">
-                <img src="../img/logo de una marca de ropa con fondo negro y diseño blanco, inspirado en marcas de ropa actuales.png" alt="Logo" class="navbar-logo">
+                <img src="../img/logo de una marca de ropa con fondo negro y diseño blanco, inspirado en marcas de ropa actuales.png"
+                    alt="Logo" class="navbar-logo">
                 <span class="navbar-brand">ONYX</span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,155 +41,54 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <main>
-        <section>
-            <form class="row g-3 needs-validation" novalidate>
-                <div class="col-md-4">
-                    <label for="validationCustom01" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="validationCustom01" value="" required>
-                    <div class="valid-feedback">
-                        Se ve bien
+        <main class="container">
+            <section class="container-form">
+                <h2 class="text-center">Contáctanos</h2>
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-6">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" class="form-control" required>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <label for="validationCustom02" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="validationCustom02" value="" required>
-                    <div class="valid-feedback">
-                        Se ve bien
+                    <div class="col-md-6">
+                        <label class="form-label">Apellido</label>
+                        <input type="text" class="form-control" required>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <label for="validationCustomUsername" class="form-label">Nombre de usuario</label>
-                    <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        <input type="text" class="form-control" id="validationCustomUsername"
-                            aria-describedby="inputGroupPrepend" required>
-                        <div class="invalid-feedback">
-                            Por favor elige un nombre de usuario
+                    <div class="col-md-6">
+                        <label class="form-label">Nombre de usuario</label>
+                        <div class="input-group">
+                            <span class="input-group-text">@</span>
+                            <input type="text" class="form-control" required>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <label for="validationCustom03" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control" id="validationCustom03" required>
-                    <div class="invalid-feedback">
-                        Por favor proporciona una ciudad valida.
+                    <div class="col-md-6">
+                        <label class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" required>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <label for="validationCustom04" class="form-label">Provincia</label>
-                    <select class="form-select" id="validationCustom04" required>
-                        <option selected disabled value="">Elige...</option>
-                        <option value="">Buenos Aires</option>
-                        <option value="">San Luis</option>
-                        <option value="">Entre Rios</option>
-                        <option value="">Catamarca</option>
-                        <option value="">Chaco</option>
-                        <option value="">Santa Fe</option>
-                        <option value="">La Rioja</option>
-                        <option value="">La Pampa</option>
-                        <option value="">Jujuy</option>
-                        <option value="">Formosa</option>
-                        <option value="">Chubut</option>
-                        <option value="">Rio Negro</option>
-                        <option value="">Misiones</option>
-                        <option value="">Neuquen</option>
-                        <option value="">Corrientes</option>
-                        <option value="">Salta</option>
-                        <option value="">San Juan</option>
-                        <option value="">Santa Cruz</option>
-                        <option value="">Santiago del Estero</option>
-                        <option value="">Tierra del Fuego</option>
-                        <option value="">Tucuman</option>
-                        <option value="">Mendoza</option>
-                        <option value="">Cordoba</option>
-                    </select>
-                    <div class="invalid-feedback">
-                        Por favor elige una provincia valida.
+                    <div class="col-md-6">
+                        <label class="form-label">Provincia</label>
+                        <select class="form-select" required>
+                            <option selected disabled>Elige...</option>
+                            <option>Buenos Aires</option>
+                            <option>Córdoba</option>
+                            <option>Mendoza</option>
+                            <option>Santa Fe</option>
+                        </select>
                     </div>
-                </div>
-                <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Enviar Formulario</button>
-                </div>
-            </form>
-        </section>
-        <section class="dudas">
-            <h2>
-                ¿Tenes alguna duda?
-            </h2>
-            <p>Dejanoslo saber aca abajo</p>
-            <form action="/submit" method="post"></form>
-            <label for="Tu duda">Tu duda</label>
-            <input type="search" name="Tu duda" id="Tu duda">
-        </section>
-        <section class="h2-preguntas">
-            <h2>Preguntas tipicas</h2>
-            <div class="preguntas">
-                <div>
-                    <p>Sobre los productos:</p>
-                    <ul>
-                        <li>¿Qué tallas están disponibles para este producto?</li>
-                        <li>¿Cómo sé cuál es mi talla?</li>
-                        <li>¿Qué materiales se utilizan para esta prenda?</li>
-                        <li>¿Los colores pueden variar respecto a las fotos?</li>
-                        <li>¿Tienen más opciones de color o diseño?</li>
-                    </ul>
-                </div>
-                <div>
-                    <p>Sobre el envío:</p>
-                    <ul>
-                        <li>¿Cuánto tarda el envío?</li>
-                        <li>¿Cuáles son los costos de envío?</li>
-                        <li>¿Envían a mi país/región?</li>
-                        <li>¿Puedo rastrear mi pedido?</li>
-                        <li>¿Qué hago si mi pedido no llega?</li>
-                    </ul>
-                </div>
-                <div>
-                    <p>Sobre cambios y devoluciones:</p>
-                    <ul>
-                        <li>¿Puedo devolver un producto si no me queda bien?</li>
-                        <li>¿Cuánto tiempo tengo para realizar una devolución?</li>
-                        <li>¿Quién paga los costos de devolución?</li>
-                        <li>¿Puedo cambiar mi producto por otro de diferente talla o color?</li>
-                        <li>¿Qué hago si recibo un producto defectuoso?</li>
-                    </ul>
-                </div>
-                <div>
-                    <p>Sobre el pago:</p>
-                    <ul>
-                        <li>¿Qué métodos de pago aceptan?</li>
-                        <li>¿Es seguro comprar en esta tienda?</li>
-                        <li>¿Puedo pagar a plazos?</li>
-                        <li>¿Qué hago si mi pago no se procesa?</li>
-                        <li>¿Ofrecen descuentos o promociones?</li>
-                    </ul>
-                </div>
-                <div>
-                    <p>Otras preguntas:</p>
-                    <ul>
-                        <li>¿Cómo contacto con atención al cliente?</li>
-                        <li>¿Ofrecen suscripciones o membresías para descuentos?</li>
-                        <li>¿Hay opciones de envoltura para regalo?</li>
-                        <li>¿Cómo cuido las prendas para que duren más tiempo?</li>
-                        <li>¿Dónde puedo dejar una reseña de mi experiencia?</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer-contacto">
-        <h2>Contactanos!!</h2>
-        <a href="https://www.instagram.com" target="_blank"><img src="../img/social (1).png" alt="Instagram"></a>
-        <a href="https://www.facebook.com" target="_blank"><img src="../img/facebook.png" alt="Facebook"></a>
-        <a href="https://www.whatsapp.com" target="_blank"><img src="../img/social.png" alt="Whatsapp"></a>
-        <img src="../img/logo de una marca de ropa con fondo negro y diseño blanco, inspirado en marcas de ropa actuales.png"
-            alt="">
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+                    <div class="col-12 text-center">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer-contacto">
+            <h2>¡Síguenos en redes!</h2>
+            <a href="https://www.instagram.com" target="_blank"><img src="../img/social (1).png" alt="Instagram"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="../img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.whatsapp.com" target="_blank"><img src="../img/social.png" alt="Whatsapp"></a>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
